@@ -16,3 +16,6 @@ Route::get('/support', 'WelcomeController@support');
 Route::get('/about-us', 'WelcomeController@aboutUs');
 Route::get('/blog', 'WelcomeController@blog');
 Route::get('/contact-us', 'WelcomeController@contactUs');
+
+Auth::routes();
+Route::get('/home', 'HomeController@index')->name('home');
